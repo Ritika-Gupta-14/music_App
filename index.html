@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=100vh,initial-scale=1.0">
+    <title>Spotify Clone</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="logo.png" alt="spotify logo">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songlist">
+        <h2>Best Of BOLLYWOOD</h2>
+        <div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="1"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="2"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="3"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="4"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="5"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="6"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="7"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="8"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="9"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover">
+                <span class="nameSon"></span>
+                <span class="songlistplay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play fa-xs p-pause" id="10"></i></span>
+            </div>
+        </div></div>
+        <div class="bannerphoto"><img id="banner" src="covers/1.jpg" alt="banner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" value="0" id="progressBar" min="0" max="100">
+        <audio src="song/1.mp3" id="audio"></audio>
+        <div class="icons">
+            <i id="back"class="fa-solid fa-backward-step fa-2xl"></i>
+            <i id="pl" class="fa-regular fa-circle-play fa-2xl"></i>
+            <i id="for" class="fa-solid fa-forward-step fa-2xl"></i>
+        </div>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/97d08365f7.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>

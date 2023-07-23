@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body {
+  background:linear-gradient(90deg ,black ,rgb(0, 0, 24));
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav{
+    font-family: 'ubuntu','sans-serif';
+}
+
+
+nav ul {
+    list-style-type: none;
+    display:flex;
+    height: 65px;
+    align-items: center;
+    background-color: black;
+    color:white;
+}
+
+nav ul li{
+    padding:12px;
+}
+.logo img{
+    width:44px;
+    padding: 9px;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size:1.3rem;
+}
+.container{
+    min-height: 61vh;
+    background-color: black;
+    color:white;
+    font-family: 'varela-round','sans-serif';
+     display: flex; 
+    margin: 10px auto;
+    width:70%;
+    border-radius: 12px;
+    padding: 24px;
+    background-image:url("bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    background-position-x: right ;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom{
+    position: sticky;
+    height: 60px;
+    background-color: black ;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    color:white;
+    flex-direction: column;
+}
+#progressBar{
+    width:80vw;
+    cursor: pointer;
+
+}
+
+.songItem{
+    height:30px;
+    display: flex;
+    background-color: white;
+    width:100%;
+    color:black;
+    margin:10px 0;
+    justify-content: space-between;
+    align-items:center;
+    border-radius: 25px;
+    
+}
+.songItem img{
+ height:30px  ;
+ border-radius: 25px ;
+}
+
+.songlistplay i{
+    cursor:pointer;
+    padding-right:13px;
+}
+.songlist{
+    display:flex;
+    flex-direction: column;
+}
+.bannerphoto{
+    width:400px;
+}
+#banner {
+display: none;
+height:300px;
+align-self: center;
+justify-self: center;
+border-radius: 50%;
+animation: photorotate 10s infinite ease-in-out;
+box-shadow: 0px 0px 30px white;
+}
+
+@keyframes photorotate {
+    from{
+        transform: translate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+i {
+    cursor: pointer;
+}
+#audio{
+    display: none;
+}
+@media (max-width:600px){
+    .container{
+       background-image:url("/");
+        padding: 0px;
+        width:100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+.songlist{
+    padding:0;
+}
+#banner{
+    height: 100px;
+    width:100px;
+    
+    justify-self: center;
+    align-self: center;
+margin-left: 30vw;
+}}
